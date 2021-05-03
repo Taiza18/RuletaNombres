@@ -6,10 +6,15 @@ const botonhtml = document.getElementById("boton");
 function changeName(){
     const random = Math.floor(Math.random() * miArray.length);
     document.getElementById("titulo").innerHTML = miArray[random];
+    miArray.splice(random, 1);
 }
 
 botonhtml.addEventListener("click", changeName);
+/*let numero = 0;
 
-
+while ( numero < 10 ){
+    numero ++;
+    document.write(numero + "<br>");
+}*/
 
 
