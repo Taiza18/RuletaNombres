@@ -35,6 +35,11 @@
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
 }
+body{
+    background-image: url("img/Sanpatrick.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
+}
 
 
