@@ -2,7 +2,7 @@
     font-size: 50px;
     flex-wrap: wrap;
 }*/
-.Students{
+/*.Students{
     color:blue;
     font-size:30px;
     border-radius: 5px;
@@ -15,6 +15,26 @@
     height: 250px;
     width: 250px;
     padding: 10px;
+}*/
+.firstDiv{
+    background-color:  #d5b3b3;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
 }
+.Students{
+    color : rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    padding: 0.5em 1.2em;
+    background: #318aac;
+    position: relative;
+}
+.Students:hover{
+    color: rgba(225, 225, 225, 1);
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
 
 
