@@ -6,15 +6,21 @@ const botonhtml = document.getElementById("boton");
 function changeName(){
     const random = Math.floor(Math.random() * miArray.length);
     document.getElementById("titulo").innerHTML = miArray[random];
+    console.log(miArray[random]);
+    console.log(miArray.length);
     miArray.splice(random, 1);
     misegundoArray.push(miArray[random]);
     if(miArray.length === 0){
         restart();
+
             }
 }
 function restart(){
+    console.log("mi primera array" + miArray);
    miArray = misegundoArray;
+   console.log("mi array modificada2" + misegundoArray);
    misegundoArray = [];
+   console.log("mi array retorno" + misegundoArray)
 
 }
 
