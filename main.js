@@ -2,18 +2,19 @@
 let miArray = ["Alisa","Amanda","Ana G.","Ana l.","Angie","Clau","Daniela R.","Daniela T.","Eliana","Flor","Gaby","Leo","Inga","Pepi","Maria Laura","Marta","Nicole","Olga","Yeraldin","Ranju","Rosangely","Sonia","Taiza","Yasmin"];
 let misegundoArray = [];
 const botonhtml = document.getElementById("boton");
+const titulo = document.getElementById("titulo")
 
 function changeName(){
-    const random = Math.floor(Math.random() * miArray.length);
-    document.getElementById("titulo").innerHTML = miArray[random];
-    console.log(miArray[random]);
-    console.log(miArray.length);
-    miArray.splice(random, 1);
+    const random = miArray[Math.floor(Math.random() * miArray.length)];
+    titulo.innerHTML = random;
+    console.log(random);
+        miArray.splice(random, 1);
     misegundoArray.push(miArray[random]);
     if(miArray.length === 0){
         restart();
 
             }
+
 }
 function restart(){
     console.log("mi primera array" + miArray);
