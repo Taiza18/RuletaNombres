@@ -17,10 +17,10 @@
     padding: 10px;
 }*/
 .firstDiv{
-    background-color:  #d5b3b3;
+    background-color: #d5b3b3;
     text-align: center;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 10rem;
+    padding: 10rem;
     border: 2px solid #ccc;
 }
 .Students{
@@ -36,7 +36,7 @@
     transition: all 0.2s ease;
 }
 body{
-    background-image: url("img/Sanpatrick.jpg");
+    background-image: url("img/Sanpatricok.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
