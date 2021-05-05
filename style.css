@@ -1,13 +1,14 @@
 
 .firstDiv{
-
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
 
 }
 .students{
     background-image: url("img/moneda.png");
     background-repeat: no-repeat;
-    height: 280px;
-    width: 450px;
+    height: 200px;
+    width: 300px;
     background-position: center;
     background-size: 100% 100%;
     justify-content: center;
