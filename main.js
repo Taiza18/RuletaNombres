@@ -4,15 +4,22 @@ let misegundoArray = [];
 const botonhtml = document.getElementById("boton");
 const titulo = document.getElementById("titulo");
 
-function changeName(){
+function changeName() {
     const random = miArray[Math.floor(Math.random() * miArray.length)];
     titulo.innerHTML = random;
     console.log(random);
-    /*  miArray.splice(random, 1);
-    misegundoArray.push(random);*/
     if(miArray.length === 0){
         restart();
-            }
+    }
+    changeArray(random);
+
+
+}
+function changeArray(random){
+
+    miArray.splice(random, 1);
+    misegundoArray.push(miArray[random]);
+
 }
 function prueba(){
     miArray.splice(random, 1);
