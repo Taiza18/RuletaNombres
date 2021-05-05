@@ -1,39 +1,29 @@
-/*.Volunteer{
-    font-size: 50px;
-    flex-wrap: wrap;
-}*/
-/*.Students{
-    color:blue;
-    font-size:30px;
-    border-radius: 5px;
-    padding: 18px 30px;
-}
+
 .firstDiv{
-    display:flex ;
+
+
+}
+.students{
+    background-image: url("img/moneda.png");
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 450px;
+    background-position: center;
+    background-size: 100% 100%;
+    justify-content: center;
     align-items: center;
-    margin: auto;
-    height: 250px;
-    width: 250px;
-    padding: 10px;
-}*/
-.firstDiv{
-    background-color: #d5b3b3;
-    text-align: center;
-    margin: 10rem;
-    padding: 10rem;
-    border: 2px solid #ccc;
+    grid-column: span;
+    position: absolute;
+    border:none;
+
+
+
 }
-.Students{
-    color : rgba(255, 255, 255, 0.9);
-    font-size: 20px;
-    padding: 0.5em 1.2em;
-    background: #318aac;
-    position: relative;
-}
-.Students:hover{
-    color: rgba(225, 225, 225, 1);
+.students:hover{
+    /*color: rgba(225, 225, 225, 1);
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-    transition: all 0.2s ease;
+    transition: all 0.2s ease;*/
+    transform:rotateY(180deg);
 }
 body{
     background-image: url("img/Sanpatricok.jpg");
@@ -41,5 +31,29 @@ body{
     background-size: 100% 100%;
 
 }
+.lista{
+
+    image-repeat: no repeat;
+    background-size: 100% 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.hijolista{
+    justify-content: center;
+    align-items: center;
+    grid-column: span;
+    position: absolute;
+    margin-top: 130px;
+
+}
+
+
+
+
+
 
 
