@@ -2,40 +2,33 @@
 let miArray = ["Alisa","Amanda","Ana G.","Ana l.","Angie","Clau","Daniela R.","Daniela T.","Eliana","Flor","Gaby","Leo","Inga","Pepi","Maria Laura","Marta","Nicole","Olga","Yeraldin","Ranju","Rosangely","Sonia","Taiza","Yasmin"];
 let misegundoArray = [];
 const botonhtml = document.getElementById("boton");
-const titulo = document.getElementById("titulo");
 
 function changeName() {
     const random = miArray[Math.floor(Math.random() * miArray.length)];
-    titulo.innerHTML = random;
+    document.getElementById("titulo").innerHTML = random;
     console.log(random);
-    if(miArray.length === 0){
+    miArray.splice(miArray.indexOf(random), 1);
+    prueba(random);
+    if(miArray.length ===0){
+        alert("GAME OVER");
+        alert("para reiniciar, haca click en el Boton");
         restart();
+
     }
-    changeArray(random);
 
-
-}
-function changeArray(random){
-
-    miArray.splice(random, 1);
-    misegundoArray.push(miArray[random]);
-
-}
-function prueba(){
-    miArray.splice(random, 1);
-    misegundoArray.push(random);
 }
 
 function restart(){
-    miArray = [...misegundoArray];
-   misegundoArray = [];
+    console.log(miArray + "mi array antes de la funcion");
+    miArray = misegundoArray;
+    console.log(miArray + "mi array despues de la funcion");
+    misegundoArray = [];
+    console.log(misegundoArray + "mi array ya vacio");
 }
-botonhtml.addEventListener("click", changeName);
-/*let numero = 0;
 
-while ( numero < 10 ){
-    numero ++;
-    document.write(numero + "<br>");
-}*/
+function prueba(random) {
+    misegundoArray.push(random);
+    console.log(misegundoArray);
+}
 
-
+botonhtml.addEventListener("click",changeName);
