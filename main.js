@@ -9,6 +9,7 @@ function changeName() {
     console.log(random);
     miArray.splice(miArray.indexOf(random), 1);
     prueba(random);
+
     if(miArray.length ===0){
         alert("GAME OVER");
         alert("para reiniciar, haca click en el Boton");
