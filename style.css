@@ -1,13 +1,16 @@
 
 .firstDiv{
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    color: white;
 
 
 }
 .students{
     background-image: url("img/moneda.png");
     background-repeat: no-repeat;
-    height: 280px;
-    width: 450px;
+    height: 200px;
+    width: 300px;
     background-position: center;
     background-size: 100% 100%;
     justify-content: center;
@@ -15,6 +18,8 @@
     grid-column: span;
     position: absolute;
     border:none;
+    text-align: center;
+    color: #083901;
 
 
 
@@ -26,9 +31,10 @@
     transform:rotateY(180deg);
 }
 body{
-    background-image: url("img/Sanpatricok.jpg");
+    background-image: url("img/bosque.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    font-family: 'Lobster', cursive;
 
 }
 .lista{
@@ -50,7 +56,9 @@ body{
     margin-top: 130px;
 
 }
-
+img{
+    left: 60%;
+}
 
 
 
