@@ -2,41 +2,42 @@
 .firstDiv{
     display: flex;
 }
+.volunteer{
+    color: #6bc96b;
+    float: top;
+    justify-self: flex-end;
+
+}
 
 .students{
     background-image: url("img/moneda.png");
-    float: right;
     height: 200px;
     width: 300px;
     background-size: 100% 100%;
     grid-column: span;
+    margin: auto;
     position: absolute;
-    border:none;
-    text-align: center;
+    top: 200px;
+    left: 100px;
     color: #083901;
 }
 .students:hover{
     /*color: rgba(225, 225, 225, 1);
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;*/
-    transform:rotateY(180deg);
+
 }
 body{
     text-align: center;
     font-family: sans-serif;
     margin: 0;
     background-image: url("img/bosque.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
 }
 .list{
-
-    image-repeat: no repeat;
-    background-size: 100% 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -51,7 +52,7 @@ body{
 
     display: flex;
 
-    animation: modal 2s 3s forwards;
+    animation: modal 0s 3s forwards;
     visibility: hidden;
     opacity: 0;
 }
@@ -72,10 +73,6 @@ h2{
     left: 34%;
     top: 35%;
     display: none;
-}
-.image{
-    text-align: right;
-    margin: auto;
 }
 
 .contenido{
@@ -102,7 +99,7 @@ h2{
     right: 10px;
     cursor: pointer;
 
-    animation: modal 2s 3s forwards;
+    animation: modal 0s 3s forwards;
     visibility: hidden;
     opacity: 0;
 
@@ -116,11 +113,6 @@ h2{
         opacity:1;
     }
 }
-.imagen-papiro{
-    float: left;
-}
-
-
 
 
 
