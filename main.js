@@ -3,13 +3,21 @@ let miArray = ["Alisa","Amanda","Ana G.","Ana l.","Angie","Clau","Daniela R.","D
 let misegundoArray = [];
 const botonhtml = document.getElementById("boton");
 
+function showChosenNames() {
+    const list = document.getElementById("list");
+    list.innerHTML = "";
+    for (let i=0; i<misegundoArray.length; i++) {
+        list.insertAdjacentHTML("beforeend","<li>" + misegundoArray[i] + "</li>");
+    }
+}
+
 function changeName() {
     const random = miArray[Math.floor(Math.random() * miArray.length)];
     document.getElementById("titulo").innerHTML = random;
     console.log(random);
     miArray.splice(miArray.indexOf(random), 1);
-    prueba(random);
-    document.getElementById("list").innerHTML = misegundoArray, "<br>";
+    addChooseParticipant(random);
+    showChosenNames();
     if(miArray.length ===0){
         restart();
     }
@@ -20,7 +28,8 @@ function restart(){
     misegundoArray = [];
 }
 
-function prueba(random) {
+function addChooseParticipant(random) {
+
     misegundoArray.push(random);
     console.log(misegundoArray);
 }
