@@ -11,24 +11,19 @@ function changeName() {
     prueba(random);
     document.getElementById("list").innerHTML = misegundoArray, "<br>";
     if(miArray.length ===0){
-
         restart();
-
     }
-
 }
 
 function restart(){
-    console.log(miArray + "mi array antes de la funcion");
     miArray = misegundoArray;
-    console.log(miArray + "mi array despues de la funcion");
     misegundoArray = [];
-    console.log(misegundoArray + "mi array ya vacio");
 }
 
 function prueba(random) {
     misegundoArray.push(random);
     console.log(misegundoArray);
 }
+
 
 botonhtml.addEventListener("click",changeName);
